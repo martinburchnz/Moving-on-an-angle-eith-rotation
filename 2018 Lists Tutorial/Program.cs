@@ -16,7 +16,7 @@ namespace _2018_Lists_Tutorial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmRotate());
         }
     }
 }

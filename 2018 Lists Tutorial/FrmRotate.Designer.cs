@@ -1,6 +1,6 @@
 ﻿namespace _2018_Lists_Tutorial
 {
-    partial class Form1
+    partial class FrmRotate
     {
         /// <summary>
         /// Required designer variable.

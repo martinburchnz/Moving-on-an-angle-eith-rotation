@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace _2018_Lists_Tutorial
 {
-    public partial class Form1 : Form
+    public partial class FrmRotate : Form
     {
         //declare a list  missiles from the missile class
         List<Missile> missiles = new List<Missile>();
@@ -21,7 +21,7 @@ namespace _2018_Lists_Tutorial
         string move;
         bool  turnLeft, turnRight;
 
-        public Form1()
+        public FrmRotate()
         {
             InitializeComponent();
             for (int i = 0; i < 7; i++)
