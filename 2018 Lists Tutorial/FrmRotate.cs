@@ -85,6 +85,12 @@ namespace _2018_Lists_Tutorial
                 {
                     foreach (Missile m in missiles)
                     {
+                        //sort out removing missiles that exit the game area
+                        if (m.missileRec.Y > (this.ClientSize.Height) || (m.missileRec.Y < 0) || (m.missileRec.X > this.ClientSize.Width) || (m.missileRec.X < 0))
+                        {
+                            missiles.Remove(m);
+                            break;
+                        }
                         if (p.planetRec.IntersectsWith(m.missileRec))
 
 
@@ -93,11 +99,7 @@ namespace _2018_Lists_Tutorial
                             missiles.Remove(m);
                             break;
                         }
-                        //sort out removing missiles that exit the game area
-                        //if (m.missileRec.Y > (this.ClientSize.Height) || (m.missileRec.Y < 0) || (m.missileRec.X > this.ClientSize.Width) || (m.missileRec.X < 0))
-                        //{
-                        //    missiles.Remove(m);
-                        //}
+                       
                     }
                 }
             }
